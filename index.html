@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Felipe Machado - Psicólogo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .hero {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .btn-custom {
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+      }
+      .btn-custom:hover {
+        background-color: #0056b3;
+      }
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+      .img-limited {
+        display: block;
+        margin-left: auto;
+        max-width: 380px; /* Define um tamanho máximo */
+        height: auto; /* Mantém a proporção */
+      }
+      .image-outside {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Felipe Machado</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#especialidades">Especialidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-custom text-white" href="#contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>O apoio que você precisa</h1>
+        <p>
+          Atendimento psicológico online e presencial para o seu bem-estar
+          emocional.
+        </p>
+        <a href="#contato" class="btn btn-light">Agendar Agora</a>
+      </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col position-relative">
+          <div class="card mb-3 border-0">
+            <div class="row g-0 align-items-center">
+              <div
+                class="col-md-9 d-flex flex-column align-items-center justify-content-center text-center"
+              >
+                <div class="card-body">
+                  <h2 class="card-title">Sobre Mim</h2>
+                  <p class="card-text">
+                    Sou Felipe Machado, psicólogo especializado em terapia
+                    cognitivo-comportamental, oferecendo um ambiente seguro e
+                    acolhedor para meus pacientes.
+                  </p>
+                  <a href="#contato" class="btn btn-custom">Agendar Consulta</a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <img
+                  src="https://c.pxhere.com/photos/46/3a/people_man_famous_portrait_todd_carey-1386940.jpg!d"
+                  class="card-img img-limited"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Minhas Especialidades</h2>
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <div class="card p-3 h-100 d-flex flex-column">
+              <h5 class="card-title">Ansiedade</h5>
+              <p class="card-text flex-grow-1">
+                Tratamento para ansiedade e transtornos relacionados.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card p-3 h-100 d-flex flex-column">
+              <h5 class="card-title">Depressão</h5>
+              <p class="card-text flex-grow-1">
+                Apoio psicológico para lidar com a depressão.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card p-3 h-100 d-flex flex-column">
+              <h5 class="card-title">Terapia de Casal</h5>
+              <p class="card-text flex-grow-1">
+                Ajuda para melhorar relacionamentos e comunicação.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card p-3 h-100 d-flex flex-column">
+              <h5 class="card-title">Desenvolvimento Pessoal</h5>
+              <p class="card-text flex-grow-1">
+                Orientação para crescimento e autoconhecimento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container py-5 text-center">
+      <h2>Entre em Contato</h2>
+      <p>Agende uma consulta pelo telefone ou WhatsApp.</p>
+      <a href="https://wa.me/seunumero" class="btn btn-success">WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
