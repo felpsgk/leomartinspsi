@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Felipe Machado - Psicólogo</title>
+    <meta
+      name="description"
+      content="Atendimento psicológico online e presencial com Leonardo Martins, especialista em terapia cognitivo-comportamental."
+    />
+    <meta
+      name="keywords"
+      content="psicologia, terapia, ansiedade, depressão, terapia de casal, bem-estar emocional"
+    />
+    <meta name="author" content="Leonardo Martins" />
+    <title>Leonardo Martins - Psicólogo</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,53 +21,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-      .hero {
-        background: linear-gradient(135deg, #007bff, #0056b3);
-        color: white;
-        padding: 80px 20px;
-        text-align: center;
-      }
-      .btn-custom {
-        background-color: #007bff;
-        color: white;
-        border-radius: 5px;
-      }
-      .btn-custom:hover {
-        background-color: #0056b3;
-      }
-      .card {
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        position: relative;
-        overflow: hidden;
-      }
-      .img-limited {
-        display: block;
-        margin-left: auto;
-        max-width: 380px; /* Define um tamanho máximo */
-        height: auto; /* Mantém a proporção */
-      }
-      .image-outside {
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80%;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Felipe Machado</a>
+        <a class="navbar-brand fw-bold" href="#">Leonardo Martins</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -73,7 +42,7 @@
               <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#especialidades">Especialidades</a>
+              <a class="nav-link" href="#carouselEspecialidades">Overview</a>
             </li>
             <li class="nav-item">
               <a class="nav-link btn btn-custom text-white" href="#contato"
@@ -88,93 +57,95 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <h1>O apoio que você precisa</h1>
-        <p>
-          Atendimento psicológico online e presencial para o seu bem-estar
-          emocional.
-        </p>
-        <a href="#contato" class="btn btn-light">Agendar Agora</a>
+        <h1 class="hero-text">O apoio psicológico que você merece</h1>
+        <p class="hero-text">Atendimento especializado para promover seu bem-estar emocional.</p>
+        <a href="#contato" class="btn btn-custom">Agendar Consulta</a>
       </div>
     </section>
 
     <!-- Sobre Mim -->
     <section id="sobre" class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col position-relative">
-          <div class="card mb-3 border-0">
-            <div class="row g-0 align-items-center">
-              <div
-                class="col-md-9 d-flex flex-column align-items-center justify-content-center text-center"
-              >
-                <div class="card-body">
-                  <h2 class="card-title">Sobre Mim</h2>
-                  <p class="card-text">
-                    Sou Felipe Machado, psicólogo especializado em terapia
-                    cognitivo-comportamental, oferecendo um ambiente seguro e
-                    acolhedor para meus pacientes.
-                  </p>
-                  <a href="#contato" class="btn btn-custom">Agendar Consulta</a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="https://c.pxhere.com/photos/46/3a/people_man_famous_portrait_todd_carey-1386940.jpg!d"
-                  class="card-img img-limited"
-                  alt="..."
-                />
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="img/backgr.png"
+            class="rounded-circle img-fluid"
+            alt="Psicólogo"
+          />
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h2>Sobre Mim</h2>
+            <p>
+              Sou Leonardo Martins, especialista em terapia
+              cognitivo-comportamental. Ajudo pacientes a superar desafios
+              emocionais e desenvolver habilidades para uma vida mais
+              equilibrada.
+            </p>
+            <a href="#contato" class="btn btn-custom">Agendar Consulta</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Especialidades -->
-    <section id="especialidades" class="bg-light py-5">
-      <div class="container text-center">
-        <h2>Minhas Especialidades</h2>
-        <div class="row mt-4">
-          <div class="col-md-3">
-            <div class="card p-3 h-100 d-flex flex-column">
-              <h5 class="card-title">Ansiedade</h5>
-              <p class="card-text flex-grow-1">
-                Tratamento para ansiedade e transtornos relacionados.
-              </p>
-            </div>
+    <!-- Carrossel -->
+    <div
+      id="carouselEspecialidades"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/auxilio.jpg" class="d-block w-100" alt="Psicologia" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="img-desc">Tratamento para Ansiedade</h5>
           </div>
-          <div class="col-md-3">
-            <div class="card p-3 h-100 d-flex flex-column">
-              <h5 class="card-title">Depressão</h5>
-              <p class="card-text flex-grow-1">
-                Apoio psicológico para lidar com a depressão.
-              </p>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/ansiedade.jpg" class="d-block w-100" alt="Terapia" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="img-desc">Apoio para Depressão</h5>
           </div>
-          <div class="col-md-3">
-            <div class="card p-3 h-100 d-flex flex-column">
-              <h5 class="card-title">Terapia de Casal</h5>
-              <p class="card-text flex-grow-1">
-                Ajuda para melhorar relacionamentos e comunicação.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card p-3 h-100 d-flex flex-column">
-              <h5 class="card-title">Desenvolvimento Pessoal</h5>
-              <p class="card-text flex-grow-1">
-                Orientação para crescimento e autoconhecimento.
-              </p>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/terapia.jpg"
+            class="d-block w-100"
+            alt="Relacionamento"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="img-desc">Terapia de Casal</h5>
           </div>
         </div>
       </div>
-    </section>
-
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselEspecialidades"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselEspecialidades"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
     <!-- Contato -->
-    <section id="contato" class="container py-5 text-center">
-      <h2>Entre em Contato</h2>
-      <p>Agende uma consulta pelo telefone ou WhatsApp.</p>
-      <a href="https://wa.me/seunumero" class="btn btn-success">WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+    <section id="contato" class="bg-light py-5 text-center">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <p>Agende uma consulta pelo WhatsApp ou telefone.</p>
+        <a
+          href="https://wa.me/5531989500878?text=Oi!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20agendamento"
+          class="btn btn-custom"
+          >WhatsApp <i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
