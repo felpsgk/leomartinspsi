@@ -15,8 +15,9 @@
 }
 
 .mancha-container {
-  width: 300px; /* Tamanho desejado */
-  height: 250px; /* Altura ajustável conforme necessário */
+  margin-left: 15px;
+  width: 500px; /* Tamanho desejado */
+  height: 450px; /* Altura ajustável conforme necessário */
   overflow: hidden; /* Corta qualquer excesso */
   display: flex;
   justify-content: center;
@@ -234,6 +235,7 @@ h6,
 
 @media (min-width: 992px) {
   .navbar {
+    color: var(--light);
     position: absolute;
     width: 100%;
     top: 0;
