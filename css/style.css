@@ -17,7 +17,7 @@
 .mancha-container {
   margin-left: 15px;
   width: 500px; /* Tamanho desejado */
-  height: 450px; /* Altura ajustável conforme necessário */
+  height: 450px; /* Altura ajustável conforme necessáraio */
   overflow: hidden; /* Corta qualquer excesso */
   display: flex;
   justify-content: center;
