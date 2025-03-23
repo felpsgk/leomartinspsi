@@ -40,7 +40,7 @@
     <script>
       function abrirWhatsApp() {
         // Monta o link do WhatsApp
-        var linkWhatsApp = `https://wa.me/5531989500878?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.`;
+        var linkWhatsApp = `https://wa.me/5531989500878?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20conversa.`;
 
         // Abre o link em uma nova aba
         window.open(linkWhatsApp, "_blank");
@@ -51,7 +51,7 @@
         let nomeValue = document.getElementById("nome").value;
         let whatsappURL = `https://wa.me/5531989500878?text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20${encodeURIComponent(
           nomeValue
-        )}.%20Gostaria%20de%20agendar%20uma%20consulta.`;
+        )}.%20Gostaria%20de%20agendar%20uma%20conversa.`;
         // Abrir o link em nova aba
         window.open(whatsappURL, "_blank");
       }
@@ -81,165 +81,232 @@
         id="home"
         style="padding-right: 0px; padding-left: 0px"
       >
-        <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;">
-          <div class="container-fluid">
-        <h1 class="navbar-brand"
-        style="color: #008960; text-shadow: 1px 1px 2px #000; font-size: 2rem; text-align: center; line-height: 1;">Leonardo<br>Martins</h1>
-        
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <nav
+          class="navbar navbar-expand-md navbar-light bg-light"
+          style="padding-top: 0px; padding-bottom: 0px"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item text-center">
-          <a class="nav-link active fw-bold" aria-current="page" href="#home" style="color: #24c494;">
-            Início
-          </a>
-            </li>
-            <li class="nav-item text-center">
-          <a class="nav-link fw-bold" href="#about" style="color: #24c494;">ACT</a>
-            </li>
-            <li class="nav-item text-center">
-          <a class="nav-link fw-bold" href="#overview" style="color: #24c494;">Desafios</a>
-            </li>
-            <li class="nav-item text-center">
-          <a class="nav-link fw-bold" href="#features" style="color: #24c494;">Atendimento</a>
-            </li>
-          </ul>
-          <button
-            onclick="abrirWhatsApp()"
-            class="btn rounded-pill py-2 px-4 ms-3 d-none d-sm-block"
-            style="background-color: #01b17c; color: #fff;"
-          >
-            Whatsapp
-          </button>
-        </div>
+          <div class="container-fluid">
+            <h1
+              class="navbar-brand"
+              style="
+                color: #008960;
+                text-shadow: 1px 1px 2px #000;
+                font-size: 2rem;
+                text-align: center;
+                line-height: 1;
+              "
+            >
+              Leonardo<br />Martins
+            </h1>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="#home"
+                    style="color: #24c494"
+                  >
+                    Início
+                  </a>
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link fw-bold"
+                    href="#about"
+                    style="color: #24c494"
+                    >ACT</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link fw-bold"
+                    href="#overview"
+                    style="color: #24c494"
+                    >Desafios</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    class="nav-link fw-bold"
+                    href="#features"
+                    style="color: #24c494"
+                    >Atendimento</a
+                  >
+                </li>
+              </ul>
+              <button
+                onclick="abrirWhatsApp()"
+                class="btn rounded-pill py-2 px-4 ms-3 d-none d-sm-block"
+                style="background-color: #01b17c; color: #fff"
+              >
+                Whatsapp
+              </button>
+            </div>
           </div>
         </nav>
         <div
           class="container-xxl hero-header"
-          style="background-color: #24c494"
+          style="padding-bottom: 20px; padding-top: 20px"
+          id="about"
         >
           <div class="container">
-            <div class="row g-5 align-items-center">
-              <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="text-white mb-4 animated slideInDown">
-                  Sente-se preso em padrões que te afastam do que realmente
-                  importa?
-                </h1>
-                <p class="text-white pb-3 animated slideInDown">
-                  A vida pode parecer um ciclo repetitivo de frustrações,
-                  ansiedade e autocrítica.
-                  <br />
-                  Se algo dentro de você está pedindo por mudança, podemos
-                  começar a jornada juntos.
-                </p>
-                <div class="position-relative w-100 mt-3">
-                  <input
-                    class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                    style="height: 58px"
-                    type="text"
-                    id="nome"
-                    placeholder="Seu nome"
+            <div class="row g-5 flex-column flex-lg-row">
+              <div class="col-lg-6" style="margin-top: 80px">
+                <h3>Olá, sou Leonardo Martins de Araújo<br /></h3>
+                <strong>CRP-04/79765</strong><br />
+                <div class="mancha-container mt-2">
+                  <img
+                    class="img-fluid rounded wow zoomIn"
+                    data-wow-delay="0.5s"
+                    src="img/sobre.png"
+                    alt="Leonardo Martins de Araújo - Psicólogo ACT"
+                    title="Leonardo Martins de Araújo - Psicólogo e Especialista em ACT"
                   />
-                  <button
-                    class="btn rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2"
-                    style="background-color: #8ee7cc"
-                    onclick="chamarWppNome()"
-                  >
-                    Agendar Atendimento!<i
-                      class="fa-brands fa-whatsapp ms-2"
-                    ></i>
-                  </button>
                 </div>
+                <p class="mb-0">
+                  Psicólogo clínico, com uma trajetória voltada para o cuidado e
+                  acolhimento de pessoas em diferentes fases da vida. Minha
+                  abordagem é baseada na
+                  <strong>Terapia de Aceitação e Compromisso (ACT)</strong>, uma
+                  abordagem científica que convida você a lidar com pensamentos
+                  difíceis e emoções desafiadoras sem evitá-los, ajudando a
+                  construir uma vida com mais sentido e propósito.<br /><br />
+                  Acredito que não precisamos eliminar o sofrimento para viver
+                  bem. Meu trabalho é te ajudar a sair do piloto automático, se
+                  conectar com seus valores e encontrar novas formas de agir com
+                  mais autenticidade, mesmo diante das dificuldades.
+                </p>
               </div>
-              <div class="col-lg-6 text-center text-lg-start">
-                <img
-                  class="img-fluid rounded animated zoomIn"
-                  style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3)"
-                  src="img/heroi.png"
-                  alt="Heroi"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Navbar & Hero End -->
-
-      <!-- Sobre Nós - Terapia de Aceitação e Compromisso (ACT) -->
-      <div class="container-xxl py-4" id="about">
-        <div class="container">
-          <div class="row g-5 flex-column-reverse flex-lg-row">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-              <h1
-                class="mb-4"
-                title="O Que é a Terapia de Aceitação e Compromisso (ACT)?"
+              <div
+                class="col-lg-6 wow fadeInDown"
+                data-wow-delay="0.1s"
+                style="margin-top: 30px"
               >
-                O Que é a Terapia de Aceitação e Compromisso (ACT)?
-              </h1>
-              <p class="mb-4">
-                A Terapia de Aceitação e Compromisso (ACT) não busca eliminar o
-                sofrimento, mas sim ajudá-lo a desenvolver uma relação mais
-                saudável com ele. Juntos, trabalharemos para que você pare de
-                lutar contra suas emoções e comece a direcionar sua energia para
-                o que realmente importa em sua vida.
-              </p>
-              <p class="mb-4">
-                A ACT é baseada em três pilares principais: aceitação,
-                mindfulness e ação comprometida. Ela auxilia na gestão das
-                emoções, melhora o bem-estar psicológico e promove um
-                alinhamento com seus valores mais profundos.
-              </p>
-              <div class="d-flex mb-4">
-                <div
-                  class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
-                >
-                  <i class="fa fa-check"></i>
+                <div class="img-presentation mt-2">
+                  <img
+                    class="img-fluid rounded wow zoomIn"
+                    data-wow-delay="0.5s"
+                    src="img/presentation.png"
+                    alt="Leonardo Martins de Araújo - Psicólogo ACT"
+                    title="Leonardo Martins de Araújo - Psicólogo e Especialista em ACT"
+                  />
                 </div>
-                <div class="ms-4">
-                  <h5>Menos autocrítica, mais presença</h5>
-                  <p class="mb-0">
-                    Aprenda a lidar com a crítica interna, sendo mais gentil
-                    consigo mesmo e cultivando o autoconhecimento.
-                  </p>
+                <h5 class="mb-4">
+                  Aqui, você encontrará um espaço seguro para explorar suas
+                  emoções, acolher sua história e desenvolver novas formas de se
+                  relacionar consigo mesmo e com o mundo
+                </h5>
+                <h6 class="mb-4">Formação e Especializações</h6>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6 class="text-center">Psicólogo pela PUC-Minas</h6>
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex mb-4">
-                <div
-                  class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
-                >
-                  <i class="fa fa-check"></i>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6 class="text-center">
+                      Mestrando em Gestão de Cuidados em Saúde
+                    </h6>
+                  </div>
                 </div>
-                <div class="ms-4">
-                  <h5>Menos luta interna, mais ação com sentido</h5>
-                  <p class="mb-0">
-                    Descubra como tomar ações que alinham com seus valores mais
-                    autênticos, mesmo diante das dificuldades.
-                  </p>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6 class="text-center">
+                      Especialização em Terapias Cognitivo Comportamentais
+                    </h6>
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex mb-4">
-                <div
-                  class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
-                >
-                  <i class="fa fa-check"></i>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6 class="text-center">
+                      Formação em Terapia de Aceitação e Compromisso (ACT)
+                    </h6>
+                  </div>
                 </div>
-                <div class="ms-4">
-                  <h5>Menos evitação, mais conexão com a vida</h5>
-                  <p class="mb-0">
-                    Crie uma relação mais saudável com suas emoções e crie uma
-                    vida mais plena, focada em seus objetivos reais.
-                  </p>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6 class="text-center">
+                      Capacitação em Cuidado em Saúde da Comunidade LGBTQIAPN+
+                    </h6>
+                  </div>
                 </div>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6 class="text-center">
+                      Aprofundamento em Estudos de Gênero e Diversidade
+                    </h6>
+                  </div>
+                </div>
+                <div class="d-flex mb-2">
+                  <div
+                    class="flex-shrink-0 btn-square rounded-circle bg-primary text-white"
+                  >
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <div class="ms-2 text-middle-center">
+                    <h6>
+                      Atendimento especializado para idosos, respeitando as
+                      particularidades emocionais e os desafios dessa fase da
+                      vida
+                    </h6>
+                  </div>
+                </div>
+                <p>
+                  Se você sente que está preso em padrões de sofrimento, lidando
+                  com ansiedade, culpa, autocobrança excessiva ou dificuldades
+                  nos relacionamentos, saiba que você não precisa enfrentar isso
+                  sozinho.
+                </p>
+                <p>
+                  Estou aqui para caminhar ao seu lado, ajudando você a
+                  construir uma vida mais significativa, presente e autêntica.
+                </p>
               </div>
               <button
                 class="btn btn-primary py-sm-3 center px-sm-5 rounded-pill mt-3"
@@ -247,47 +314,121 @@
                 onclick="abrirWhatsApp()"
                 title="Agende uma conversa sobre Terapia ACT"
               >
-                Agende nossa conversa!<i
+                Vamos conversar?<i
                   class="fa-brands fa-whatsapp ms-2"
                   style="color: #00ff2f"
                 ></i>
               </button>
             </div>
-            <div class="col-lg-6" style="margin-top: 20px">
-              <p class="mb-0">
-                Olá, sou <strong>Leonardo Martins de Araújo</strong>,
-                CRP-04/79765, psicólogo clínico e enfermeiro, especializado em
-                Terapia de Aceitação e Compromisso (ACT). Com minha experiência,
-                posso ajudar você a encontrar mais significado em sua vida e
-                melhorar seu bem-estar emocional.
+          </div>
+        </div>
+      </div>
+      <!-- Navbar & Hero End -->
+      <div class="container-xxl py-2" style="background-color: #24c494">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h2 class="text-white my-4 animated slideInDown">
+                Sente que está preso em padrões que te afastam do que realmente
+                importa?
+              </h2>
+              <p class="text-white pb-3 animated slideInDown">
+                A vida pode, às vezes, parecer um ciclo repetitivo de
+                frustrações, ansiedade e autocrítica. Você tenta mudar, mas algo
+                sempre te puxa de volta. E se o problema não for você, mas a
+                maneira como aprendeu a lidar com seus pensamentos e emoções?
               </p>
-              <div class="mancha-container mt-2">
-                <img
-                  class="img-fluid mancha-shape rounded wow zoomIn"
-                  data-wow-delay="0.5s"
-                  src="img/sobre.png"
-                  alt="Leonardo Martins de Araújo - Psicólogo ACT"
-                  title="Leonardo Martins de Araújo - Psicólogo e Especialista em ACT"
+              <p class="text-white pb-3 animated slideInDown">
+                Aqui, você encontra um espaço seguro para sair desse embate
+                interno. A Terapia de Aceitação e Compromisso (ACT) não propõe
+                eliminar seu sofrimento, mas ajudá-lo a construir uma relação
+                mais saudável com ele. Vamos trabalhar para que você
+                <strong>pare de lutar contra o que sente</strong> e comece a
+                direcionar sua energia para
+                <strong>o que realmente tem valor para você.</strong>
+              </p>
+
+              <h5 class="text-white">
+                <i class="fa-solid fa-caret-right"></i> Menos autocrítica, mais
+                presença.
+              </h5>
+              <h5 class="text-white">
+                <i class="fa-solid fa-caret-right"></i> Menos luta interna, mais
+                ação com sentido.
+              </h5>
+              <h5 class="text-white pb-3">
+                <i class="fa-solid fa-caret-right"></i> Menos evitação, mais
+                conexão com a vida que você quer viver.
+              </h5>
+
+              <p class="text-white pb-3 animated slideInDown">
+                A mudança não acontece quando eliminamos o desconforto, mas
+                quando aprendemos a caminhar com ele – sem perder de vista o que
+                nos faz seguir em frente.
+              </p>
+
+              <div class="position-relative w-100 mt-3">
+                <input
+                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                  style="height: 80px"
+                  type="text"
+                  id="nome"
+                  placeholder="Seu nome"
                 />
+                <button
+                  class="btn rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2"
+                  style="background-color: #8ee7cc"
+                  onclick="chamarWppNome()"
+                >
+                  Se isso faz sentido para<br />
+                  você, vamos conversar!<i
+                    class="fa-brands fa-whatsapp ms-2"
+                  ></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Sobre Nós - Terapia de Aceitação e Compromisso (ACT) -->
+
       <!-- About End -->
       <!-- Overview Start -->
-      <div class="container-xxl bg-light my-4 py-2" id="overview">
-        <div class="container">
+      <div class="container-xxl bg-light my-0 py-2" id="overview">
+        <div class="container align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <img
+              class="img-fluid rounded animated zoomIn"
+              src="img/heroi.png"
+              alt="Heroi"
+            />
+          </div>
           <h1
             class="my-3"
             title="Identifique-se com Algum Desafio Psicológico?"
           >
-            Se Identificou com Algum Desafio?
+            Algo dentro de você pede por mudança?
           </h1>
-          <h6 class="mb-5">
-            Confira abaixo alguns dos desafios que podemos trabalhar juntos para
-            melhorar seu bem-estar emocional:
+          <p class="mb-3">
+            Talvez você esteja cansado de lutar contra sua própria mente. Ou
+            talvez sinta que está rodando em círculos, tentando se ajustar a
+            expectativas impossíveis. O sofrimento não significa que há algo de
+            errado com você.
+          </p>
+          <h6 class="mb-3">
+            Mas sim que algo dentro de você precisa ser ouvido.
           </h6>
+          <p class="mb-3">
+            Na Terapia de Aceitação e Compromisso (ACT), não buscamos eliminar
+            pensamentos difíceis ou emoções desconfortáveis a qualquer custo. Em
+            vez disso, aprendemos a criar um novo relacionamento com eles—um que
+            permita que você viva com mais autenticidade, liberdade e sentido.
+          </p>
+          <p class="mb-3">
+            Aqui, você encontrará um espaço seguro para acolher suas dores e, ao
+            mesmo tempo, se mover na direção do que realmente importa para você.
+          </p>
+          <p class="mb-5">Se identificou com algum desses desafios?</p>
           <div class="row g-5 py-4 align-items-center">
             <div class="container">
               <div class="row justify-content-center">
@@ -573,6 +714,33 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
               <!-- <img class="img-fluid rounded" src="img/overview-1.jpg" /> -->
+              <p>Você não precisa enfrentar tudo isso sozinho.</p>
+              <p>
+                A ACT não busca consertar você — porque você não está quebrado.
+                Juntos, podemos construir um caminho onde o sofrimento não seja
+                mais um bloqueio, mas sim um guia para uma vida mais alinhada ao
+                que realmente tem valor para você.
+              </p>
+
+              <div class="position-relative w-100 mt-3">
+                <input
+                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                  style="height: 80px"
+                  type="text"
+                  id="nome"
+                  placeholder="Seu nome"
+                />
+                <button
+                  class="btn rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2"
+                  style="background-color: #8ee7cc"
+                  onclick="chamarWppNome()"
+                >
+                  Se isso ressoou com você, <br />
+                  estou aqui para te ajudar.<i
+                    class="fa-brands fa-whatsapp ms-2"
+                  ></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -580,8 +748,22 @@
       <!-- Overview End -->
 
       <!-- Como Funciona o Atendimento -->
-      <div class="container-xxl py-6" id="features">
+      <div
+        class="container-xxl py-3"
+        style="padding-bottom: 10px"
+        id="features"
+      >
         <div class="container">
+          <div
+            class="col-lg-6 mb-3 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="img-fluid img-trabalho rounded animated zoomIn"
+              src="img/trabalho.png"
+              alt="trabalho"
+            />
+          </div>
+
           <div
             class="mx-auto text-center wow fadeInUp"
             data-wow-delay="0.1s"
@@ -591,60 +773,83 @@
               class="mb-3"
               title="Entenda Como Funciona o Atendimento Psicológico Online"
             >
-              Como Funciona o Atendimento?
+              Como funciona meu trabalho?
             </h1>
-            <p class="mb-5">
-              Nosso atendimento online é personalizado, com foco em ajudar você
-              a construir uma relação mais saudável com seus pensamentos e
-              emoções. O objetivo é proporcionar mais autoconhecimento e alinhar
-              sua vida aos seus valores mais autênticos.
-            </p>
           </div>
           <div class="row g-4">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="advanced-feature-item text-center rounded py-5 px-4">
                 <i class="fa fa-laptop fa-3x text-primary mb-4"></i>
-                <h5 class="mb-3">Atendimento Online</h5>
+                <h5 class="mb-3">Atendimento presencial e online</h5>
                 <p class="m-0">
-                  Realizado no conforto do seu espaço, garantindo um ambiente
-                  seguro e acolhedor.
+                  Ofereço sessões tanto no consultório quanto no ambiente
+                  virtual, garantindo um acompanhamento terapêutico acolhedor,
+                  de qualidade, com conforto, segurança e a profundidade
+                  necessária para o seu processo.
                 </p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="advanced-feature-item text-center rounded py-5 px-4">
                 <i class="fa fa-users fa-3x text-primary mb-4"></i>
-                <h5 class="mb-3">Processo Colaborativo</h5>
+                <h5 class="mb-3">Para quem é o atendimento</h5>
                 <p class="m-0">
-                  Juntos, exploramos seus valores e criamos estratégias para uma
-                  vida com mais significado.
+                  Atendo jovens, adultos e idosos que buscam compreender melhor
+                  seus pensamentos, emoções e comportamentos, construindo uma
+                  relação mais flexível e gentil consigo mesmos.
                 </p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="advanced-feature-item text-center rounded py-5 px-4">
                 <i class="fa fa-cogs fa-3x text-primary mb-4"></i>
-                <h5 class="mb-3">Estratégias Baseadas em Evidências</h5>
+                <h5 class="mb-3">Um processo ativo e colaborativo</h5>
                 <p class="m-0">
-                  Utilizamos técnicas comprovadas, como mindfulness, para
-                  facilitar mudanças de padrões negativos.
+                  A Terapia de Aceitação e Compromisso (ACT) não busca apenas
+                  aliviar sintomas, mas ajudá-lo a construir uma vida com mais
+                  sentido, mesmo diante das dificuldades. Juntos, exploramos o
+                  que realmente importa para você, encontrando formas de agir
+                  alinhadas aos seus valores.
                 </p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="advanced-feature-item text-center rounded py-5 px-4">
                 <i class="fa fa-heart fa-3x text-primary mb-4"></i>
-                <h5 class="mb-3">Atenção à Diversidade</h5>
+                <h5 class="mb-3">Ferramentas para a mudança</h5>
                 <p class="m-0">
-                  Oferecemos um espaço seguro e respeitoso para todas as
-                  identidades, com especial foco na comunidade LGBTQIAPN+.
+                  Mais do que apenas falar sobre seus desafios, utilizamos
+                  estratégias baseadas em evidências para ajudá-lo a desenvolver
+                  flexibilidade psicológica. Isso pode envolver:<br />✔
+                  Exercícios de mindfulness para aumentar sua consciência e
+                  presença no momento presente.<br />✔ Técnicas para
+                  diferenciar-se dos pensamentos autocríticos e impedir que eles
+                  definam suas ações.<br />✔ Reflexões sobre seus valores e como
+                  tomar decisões alinhadas com aquilo que realmente importa .
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="advanced-feature-item text-center rounded py-5 px-4">
+                <i
+                  class="fa fa-solid fa-universal-access fa-3x text-primary mb-4"
+                ></i>
+                <h5 class="mb-3">
+                  Terapia Afirmativa: um espaço seguro para pessoas LGBTQIAPN+
+                </h5>
+                <p class="m-0">
+                  Minha prática também se baseia na Terapia Afirmativa,
+                  garantindo um espaço livre de julgamentos para pessoas
+                  LGBTQIAPN+.<br />Aqui, você pode falar sobre sua identidade,
+                  desafios e vivências sem medo de invalidação. O objetivo é
+                  ajudá-lo a viver com autenticidade e segurança, construindo
+                  relações mais saudáveis e uma autoimagem fortalecida
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Depoimentos 
       <div class="container-xxl py-6" id="testimonial">
         <div class="container">
           <div
@@ -652,82 +857,32 @@
             data-wow-delay="0.1s"
             style="max-width: 600px"
           >
-            <h1 class="mb-3">O Que Nossos Clientes Dizem</h1>
-            <p class="mb-5">
-              Conheça a experiência de quem encontrou acolhimento e apoio
-              durante seu processo terapêutico. Aqui, cada cliente é tratado com
-              respeito, empatia e dedicação.
-            </p>
-          </div>
-          <div
-            class="owl-carousel testimonial-carousel wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="testimonial-item bg-light rounded my-4">
-              <p class="fs-5">
-                <i class="fa fa-comments fa-4x text-primary mt-n4 me-3"></i>
-                "A terapia que recebi foi fundamental para meu bem-estar. O
-                acolhimento e a atenção que tive foram incríveis. Eu me senti
-                compreendida e segura em cada sessão. É um espaço onde pude
-                realmente ser eu mesma."
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-1.jpg"
-                  style="width: 65px; height: 65px"
-                />
-                <div class="ps-4">
-                  <h5 class="mb-1">Mariana Alves</h5>
-                  <span>Designer de Interiores</span>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-light rounded my-4">
-              <p class="fs-5">
-                <i
-                  class="fa fa-hand-holding-usd fa-4x text-primary mt-n4 me-3"
+            <h4 class="mb-3">
+              Seja qual for seu momento, minha proposta é caminharmos juntos
+              rumo a uma vida com mais presença, aceitação e compromisso com
+              quem você realmente é.
+            </h4>
+            <div class="position-relative w-100 mt-3">
+              <input
+                class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                style="height: 58px; background-color: #bbbbbb;"
+                type="text"
+                id="nome"
+                placeholder="Seu nome"
+              />
+              <button
+                class="btn rounded-pill py-2 px-3 shadow-none position-absolute top-0 end-0 m-2"
+                style="background-color: #8ee7cc"
+                onclick="chamarWppNome()"
+              >
+                Agendar uma conversa!<i
+                  class="fa-brands fa-whatsapp ms-2"
                 ></i>
-                "Passei por momentos difíceis, e a ajuda que encontrei aqui foi
-                essencial para minha recuperação. A paciência, a escuta atenta e
-                a abordagem humanizada fizeram toda a diferença. Recomendo muito
-                o atendimento!"
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-2.jpg"
-                  style="width: 65px; height: 65px"
-                />
-                <div class="ps-4">
-                  <h5 class="mb-1">Rodrigo Costa</h5>
-                  <span>Empresário</span>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item bg-light rounded my-4">
-              <p class="fs-5">
-                <i class="fa fa-thumbs-up fa-4x text-primary mt-n4 me-3"></i>
-                "Encontrei um espaço de acolhimento genuíno, onde pude expressar
-                meus sentimentos sem medo de ser julgada. A abordagem foi sempre
-                cuidadosa e focada no meu bem-estar. Agradeço muito pelo apoio e
-                por tudo o que aprendi."
-              </p>
-              <div class="d-flex align-items-center">
-                <img
-                  class="img-fluid flex-shrink-0 rounded-circle"
-                  src="img/testimonial-3.jpg"
-                  style="width: 65px; height: 65px"
-                />
-                <div class="ps-4">
-                  <h5 class="mb-1">Fernanda Ribeiro</h5>
-                  <span>Professora</span>
-                </div>
-              </div>
+              </button>
             </div>
           </div>
         </div>
-      </div>-->
+      </div>
       <!-- Footer Start -->
       <div
         class="container-fluid bg-dark text-body footer wow fadeIn"

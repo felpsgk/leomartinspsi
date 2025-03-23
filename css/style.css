@@ -14,7 +14,24 @@
   margin-bottom: 5px;
 }
 
+.text-middle-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 .mancha-container {
+  margin-left: 15px;
+  width: 500px; /* Tamanho desejado */
+  height: 380px; /* Altura ajustável conforme necessáraio */
+  overflow: hidden; /* Corta qualquer excesso */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-presentation {
   margin-left: 15px;
   width: 500px; /* Tamanho desejado */
   height: 450px; /* Altura ajustável conforme necessáraio */
@@ -23,6 +40,18 @@
   justify-content: center;
   align-items: center;
 }
+
+
+.img-trabalho {
+  margin-left: 15px;
+  width: 70%; /* Tamanho desejado */
+  height: 70%; /* Altura ajustável conforme necessáraio */
+  overflow: hidden; /* Corta qualquer excesso */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mancha-shape {
   width: 100%;
   height: 100%;
@@ -127,8 +156,8 @@ h6,
 }
 
 .btn-square {
-  width: 38px;
-  height: 38px;
+  width: 25px;
+  height: 25px;
 }
 
 .btn-sm-square {
